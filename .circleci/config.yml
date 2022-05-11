@@ -56,7 +56,7 @@ jobs:
         type: string
 
     executor: node
-    working_directory: ~/project/packages/<< parameters.package_name >>
+    working_directory: ~/project/<< parameters.package_name >>
 
     steps:
       - checkout:
@@ -73,7 +73,7 @@ jobs:
       - persist_to_workspace:
           root: ~/project
           paths:
-            - packages/<< parameters.package_name >>
+            - << parameters.package_name >>
 
   deploy:
     parameters:
@@ -81,7 +81,7 @@ jobs:
         type: string
 
     executor: node
-    working_directory: ~/project/packages/<< parameters.package_name >>
+    working_directory: ~/project/<< parameters.package_name >>
 
     steps:
       - attach_workspace:

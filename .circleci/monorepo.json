@@ -1,10 +1,10 @@
 {
-  "root": "packages",
+  "root": "",
   "pages": 3,
   "packages": {
-    "api": ["packages/api/"],
-    "app": ["packages/app/"],
-    "auth": ["packages/auth/"],
-    "gateway": ["packages/gateway/", ":!packages/gateway/*.md"]
+    "api": ["api/"],
+    "app": ["app/"],
+    "auth": ["auth/"],
+    "gateway": ["gateway/", ":!gateway/*.md"]
   }
 }
