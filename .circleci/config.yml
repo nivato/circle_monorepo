@@ -28,7 +28,7 @@ parameters:
 executors:
   node:
     docker:
-      - image: cimg/node
+      - image: cimg/node:lts
 
 jobs:
   trigger-workflows:
